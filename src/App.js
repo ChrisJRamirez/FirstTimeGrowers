@@ -12,7 +12,7 @@ import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div className='container mx-auto px-4' >
+    <div className='container px-4 mx-auto' >
       <Routes className='h-screen'> {/** height: 100vh */}
         <Route path='/' element={<Home />}></Route>
         <Route path='/faq' element={<FAQ />}></Route>

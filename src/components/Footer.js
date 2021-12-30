@@ -1,9 +1,13 @@
 const Footer = (props) => {
   return (
     <div>
-      <h3>
-        FORUM - ASK A QUESTION
-      </h3>
+      me footer
+      <div>
+        Team
+        Karpe
+        Shariq
+        Chris
+      </div>
       
     </div>
   )
