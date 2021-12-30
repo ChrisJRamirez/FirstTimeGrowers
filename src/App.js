@@ -12,8 +12,8 @@ import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <div>
-      <Routes>
+    <div className='container mx-auto px-4' >
+      <Routes className='h-screen'> {/** height: 100vh */}
         <Route path='/' element={<Home />}></Route>
         <Route path='/faq' element={<FAQ />}></Route>
         <Route path='/auto-v-photo' element={<AutoVPhoto />}></Route>

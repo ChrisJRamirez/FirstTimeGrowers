@@ -1,5 +1,5 @@
 const FansAirflow = props => {
-  return <div>AutoVPhoto</div>
+  return <div>Fans/Airflow</div>
 };
 
 export default FansAirflow;

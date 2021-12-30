@@ -1,3 +1,7 @@
+/* when you bring in Tailwind, does automatic CSS reset */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* material ui --> card headers, components */
+/* styles compnents --> write css inside of the react file --> if u want more specific custom styling */

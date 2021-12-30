@@ -1,16 +1,18 @@
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Nav from '../components/Nav';
 
 
 const Home = (props) => {
   return (
-    <div className='App'>
+    <div>
       <Header />
+      <Nav />
 
       {/* Intro into website */}
+      <h1 className="m-auto text-2xl text-center">First Time Growers</h1>
       <div>
-        <h1>First Time Growers</h1>
         <p className='intro-paragraph'>
           So you decided to grow Marijuana for the first time and you don't know
           what the $%^@ you're doing? <br></br>
