@@ -5,7 +5,8 @@ import Lighting from "./views/Lighting";
 import IndoorVOutdoor from "./views/IndoorVOutdoor";
 import SoilNutrients from "./views/SoilNutrients";
 import Watering from "./views/Watering";
-import FansAirflow from "./views/FansAirflow"
+import FansAirflow from "./views/FansAirflow";
+
 
 import { Routes, Route } from 'react-router-dom'
 
