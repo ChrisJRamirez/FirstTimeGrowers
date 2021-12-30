@@ -5,7 +5,7 @@ const Header = (props) => {
     <div className="header-overall">
       <section className="header-logo">
         <h1>First Time Growers</h1>
-        {/* Logo goes here, to the right of the the name FTG */}
+        {/* Logo goes here, to the right of the the name FirstTimeGrowers */}
 
       </section>
        
