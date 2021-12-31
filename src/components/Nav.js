@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 const Nav = (props) => {
   return (
-    <nav>
+    <nav className='list-disc'>
       <Link to='auto-v-photo'>
         <h3>AutoFlowers vs. PhotoPeriods</h3>
       </Link>
