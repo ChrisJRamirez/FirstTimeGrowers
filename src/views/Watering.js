@@ -1,5 +1,5 @@
-const Watering = props => {
-  return <div>Watering</div>
-}
+const Watering = (props) => {
+  return <div>Watering</div>;
+};
 
-export default Watering
+export default Watering;

@@ -1,5 +1,5 @@
-const SoilNutrients = props => {
-  return <div>SoilNutrients</div>
-}
+const SoilNutrients = (props) => {
+  return <div>SoilNutrients</div>;
+};
 
 export default SoilNutrients;

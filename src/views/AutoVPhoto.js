@@ -1,5 +1,5 @@
-const AutoVPhoto = props => {
-  return <div>AutoVPhoto</div>
+const AutoVPhoto = (props) => {
+  return <div>AutoVPhoto</div>;
 };
 
 export default AutoVPhoto;
