@@ -6,9 +6,15 @@ export default function Hero() {
       <main>
         <div>
           <div className='relative'>
-            <div className='absolute inset-x-0 bottom-0 bg-gray-100 h-1/2' />
+            <div className='absolute inset-x-0 bottom-0 h-1/2' />
+            {/* <div className='absolute inset-x-0 bottom-0 bg-gray-100 h-1/2' /> */}
             <div className='mx-auto max-w-7xl sm:px-6 lg:px-8'>
-              <div className='relative shadow-xl sm:rounded-2xl sm:overflow-hidden'>
+              
+              
+              <div className='relative sm:rounded-2xl sm:overflow-hidden'>
+              {/* <div className='relative shadow-xl sm:rounded-2xl sm:overflow-hidden'> */}
+
+              
                 <div className='absolute inset-0'>
                   {/* https://www.pexels.com/photo/person-holding-green-canabis-2178565/ */}
                   <img
