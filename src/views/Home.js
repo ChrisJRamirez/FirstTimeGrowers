@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import Nav from '../components/Nav';
+// import Nav from '../components/Nav';
 import Hero from '../components/Hero';
 
 const Home = (props) => {
@@ -33,32 +33,32 @@ const Home = (props) => {
           {/* <img/> IMAGE SHOWING THE STAGES OF PLANT*/}
         </div>
 
-        <div>
-          <h2>FTG CHECKLIST</h2>
-          <ol className='list-disc'>
-            <li>
+        <div className="w-full bg-white rounded-lg shadow-lg lg:w-1/3">
+          <h2 className="flex justify-center font-bold">FTG CHECKLIST</h2>
+          <ol className="divide-y-2 divide-gray-100">
+            <li className="p-3 hover:bg-blue-600 hover:text-blue-200">
               <Link to='auto-v-photo'>AutoFlowers vs. PhotoPeriods</Link>
               What type of plant am I trying to grow?
             </li>
-            <li>
+            <li className="p-3 hover:bg-blue-600 hover:text-blue-200">
               <Link to='indoor-v-outdoor'>Indoor vs. Outdoor Grow</Link>
             </li>
-            <li>
+            <li className="p-3 hover:bg-blue-600 hover:text-blue-200">
               <Link to='lighting'>Lighting</Link>
             </li>
-            <li>
+            <li className="p-3 hover:bg-blue-600 hover:text-blue-200">
               <Link to='watering'>Watering</Link>
             </li>
-            <li>
+            <li className="p-3 hover:bg-blue-600 hover:text-blue-200">
               <Link to='soil-nutrients'>Soil/Nutrients</Link>
             </li>
-            <li>
+            <li className="p-3 hover:bg-blue-600 hover:text-blue-200">
               <Link to='fans-airflow'>Fans/Airflow</Link>
             </li>
-            <li>
+            <li className="p-3 hover:bg-blue-600 hover:text-blue-200">
               <Link to='fans-airflow'>Harvesting/Curing</Link>
             </li>
-            <li>
+            <li className="p-3 hover:bg-blue-600 hover:text-blue-200">
               <Link to='fans-airflow'>FORUM - ASK A QUESTION</Link>
             </li>
           </ol>
