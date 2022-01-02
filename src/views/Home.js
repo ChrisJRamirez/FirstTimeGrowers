@@ -10,7 +10,7 @@ const Home = (props) => {
       <Header />
       <Hero />
       {/* Intro into website */}
-      <h1 className='m-auto text-2xl text-center'>First Time Grower?</h1>
+      {/* <h1 className='m-auto text-2xl text-center'>First Time Grower?</h1> */}
 
       {/*FTG Checklist - to the right of the paragraph above - hopefully with some sort fo weed leaf svg as bullet points*/}
       <div className='flex justify-between w-full m-auto'>
@@ -22,7 +22,7 @@ const Home = (props) => {
             lifelong hobby! The checklist to the right will breakdown the basics
             of growing, and is by no means meant to be an extensive breakdown of
             everything needed to grow award-winning Cannabis.
-          </p>{' '}
+          </p>
           <br /> <br />
           <p>
             Our site is meant to provide the pertinent information to turn a
