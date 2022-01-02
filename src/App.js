@@ -11,10 +11,8 @@ import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className='container px-4 mx-auto'>
-      <Routes className='h-screen'>
-        {' '}
-        {/** height: 100vh */}
+    <div className='px-4 mx-auto max-w-7xl sm:px-6 lg:px-8'>
+      <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/faq' element={<FAQ />}></Route>
         <Route path='/auto-v-photo' element={<AutoVPhoto />}></Route>
