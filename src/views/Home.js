@@ -4,6 +4,49 @@ import Footer from '../components/Footer';
 // import Nav from '../components/Nav';
 import Hero from '../components/Hero';
 
+const checklist = [
+  {
+    name: 'AutoFlower Vs PhotoPeriods',
+    subtext: 'What type of plant am I trying to grow?',
+    to: 'auto-v-photo',
+  },
+  {
+    name: 'Indoor vs. Outdoor Grow',
+    subtext: '',
+    to: 'indoor-v-outdoor',
+  },
+  {
+    name: 'Lighting',
+    subtext: '',
+    to: 'lighting',
+  },
+  {
+    name: 'Watering',
+    subtext: '',
+    to: 'watering',
+  },
+  {
+    name: 'Soil/Nutrients',
+    subtext: '',
+    to: 'soil-nutrients',
+  },
+  {
+    name: 'Fans/Airflow',
+    subtext: '',
+    to: 'fans-airflow',
+  },
+  {
+    name: 'Harvesting/Curing',
+    subtext: '',
+    to: 'harvesting-curing',
+  },
+  {
+    name: 'FAQ',
+    subtext: '',
+    to: 'faq',
+  },
+];
+
 const Home = (props) => {
   return (
     <div>
@@ -30,54 +73,31 @@ const Home = (props) => {
             feel free to to post any questions for help in the FAQS/Ask A
             Question section, and we will do our best to answer them.
           </p>
-          {/* <img/> IMAGE SHOWING THE STAGES OF PLANT*/}
           <div>
             <img
-            className='object-cover w-full h-full'
-            src="https://3hlboz3j490o1qmcr2gaz7i1-wpengine.netdna-ssl.com/wp-content/uploads/2021/07/canabis-cycle.jpg.webp"
-            alt="weed-plant-lifecyle" 
+              className='object-cover w-full h-full'
+              src='https://3hlboz3j490o1qmcr2gaz7i1-wpengine.netdna-ssl.com/wp-content/uploads/2021/07/canabis-cycle.jpg.webp'
+              alt='weed-plant-lifecyle'
             />
           </div>
         </div>
- 
-        <div className="w-full bg-white rounded-lg shadow-lg lg:w-1/2">
-          <h2 className="flex justify-center font-bold">FTG CHECKLIST</h2>
-          <ol className="divide-y-2 divide-gray-100">
-            <li className="p-3 hover:bg-green-600 hover:text-green-200">
-              <Link className="font-bold " to='auto-v-photo'>AutoFlowers vs. PhotoPeriods</Link>
-              <p>What type of plant am I trying to grow?</p>
-            </li>
-            <li className="p-3 hover:bg-green-600 hover:text-green-200">
-              <Link to='indoor-v-outdoor'>Indoor vs. Outdoor Grow</Link>
-            </li>
-            <li className="p-3 hover:bg-green-600 hover:text-green-200">
-              <Link to='lighting'>Lighting</Link>
-            </li>
-            <li className="p-3 hover:bg-green-600 hover:text-green-200">
-              <Link to='watering'>Watering</Link>
-            </li>
-            <li className="p-3 hover:bg-green-600 hover:text-green-200">
-              <Link to='soil-nutrients'>Soil/Nutrients</Link>
-            </li>
-            <li className="p-3 hover:bg-green-600 hover:text-green-200">
-              <Link to='fans-airflow'>Fans/Airflow</Link>
-            </li>
-            <li className="p-3 hover:bg-green-600 hover:text-green-200">
-              <Link to='harvesting-curing'>Harvesting/Curing</Link>
-            </li>
-            <li className="p-3 hover:bg-green-600 hover:text-green-200">
-              <Link to='fans-airflow'>FORUM - ASK A QUESTION</Link>
-            </li>
+
+        <div className='w-full bg-white rounded-lg shadow-lg lg:w-1/2'>
+          <h2 className='flex justify-center font-bold'>FTG CHECKLIST</h2>
+          <ol className='divide-y-2 divide-gray-100'>
+            {checklist.map((item) => {
+              return (
+                <li className='p-3 hover:bg-green-600 hover:text-green-200'>
+                  <Link className='font-bold' to={item.to}>
+                    {item.name}
+                  </Link>
+                  {item.subtext && <p>{item.subtext}</p>}
+                </li>
+              );
+            })}
           </ol>
         </div>
-
-        
-
-    </div>
-
-    
-
-    
+      </div>
 
       <Footer />
     </div>
