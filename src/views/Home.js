@@ -31,13 +31,20 @@ const Home = (props) => {
             Question section, and we will do our best to answer them.
           </p>
           {/* <img/> IMAGE SHOWING THE STAGES OF PLANT*/}
+          <div>
+            <img
+            className='object-cover w-full h-full'
+            src="https://3hlboz3j490o1qmcr2gaz7i1-wpengine.netdna-ssl.com/wp-content/uploads/2021/07/canabis-cycle.jpg.webp"
+            alt="weed-plant-lifecyle" 
+            />
+          </div>
         </div>
-
+ 
         <div className="w-full bg-white rounded-lg shadow-lg lg:w-1/2">
           <h2 className="flex justify-center font-bold">FTG CHECKLIST</h2>
           <ol className="divide-y-2 divide-gray-100">
             <li className="p-3 hover:bg-blue-600 hover:text-blue-200">
-              <Link to='auto-v-photo'>AutoFlowers vs. PhotoPeriods</Link>
+              <Link className="font-bold " to='auto-v-photo'>AutoFlowers vs. PhotoPeriods</Link>
               <p>What type of plant am I trying to grow?</p>
             </li>
             <li className="p-3 hover:bg-blue-600 hover:text-blue-200">
@@ -63,7 +70,14 @@ const Home = (props) => {
             </li>
           </ol>
         </div>
-      </div>
+
+        
+
+    </div>
+
+    
+
+    
 
       <Footer />
     </div>
