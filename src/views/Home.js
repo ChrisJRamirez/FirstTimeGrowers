@@ -43,29 +43,29 @@ const Home = (props) => {
         <div className="w-full bg-white rounded-lg shadow-lg lg:w-1/2">
           <h2 className="flex justify-center font-bold">FTG CHECKLIST</h2>
           <ol className="divide-y-2 divide-gray-100">
-            <li className="p-3 hover:bg-blue-600 hover:text-blue-200">
+            <li className="p-3 hover:bg-green-600 hover:text-green-200">
               <Link className="font-bold " to='auto-v-photo'>AutoFlowers vs. PhotoPeriods</Link>
               <p>What type of plant am I trying to grow?</p>
             </li>
-            <li className="p-3 hover:bg-blue-600 hover:text-blue-200">
+            <li className="p-3 hover:bg-green-600 hover:text-green-200">
               <Link to='indoor-v-outdoor'>Indoor vs. Outdoor Grow</Link>
             </li>
-            <li className="p-3 hover:bg-blue-600 hover:text-blue-200">
+            <li className="p-3 hover:bg-green-600 hover:text-green-200">
               <Link to='lighting'>Lighting</Link>
             </li>
-            <li className="p-3 hover:bg-blue-600 hover:text-blue-200">
+            <li className="p-3 hover:bg-green-600 hover:text-green-200">
               <Link to='watering'>Watering</Link>
             </li>
-            <li className="p-3 hover:bg-blue-600 hover:text-blue-200">
+            <li className="p-3 hover:bg-green-600 hover:text-green-200">
               <Link to='soil-nutrients'>Soil/Nutrients</Link>
             </li>
-            <li className="p-3 hover:bg-blue-600 hover:text-blue-200">
+            <li className="p-3 hover:bg-green-600 hover:text-green-200">
               <Link to='fans-airflow'>Fans/Airflow</Link>
             </li>
-            <li className="p-3 hover:bg-blue-600 hover:text-blue-200">
+            <li className="p-3 hover:bg-green-600 hover:text-green-200">
               <Link to='harvesting-curing'>Harvesting/Curing</Link>
             </li>
-            <li className="p-3 hover:bg-blue-600 hover:text-blue-200">
+            <li className="p-3 hover:bg-green-600 hover:text-green-200">
               <Link to='fans-airflow'>FORUM - ASK A QUESTION</Link>
             </li>
           </ol>
