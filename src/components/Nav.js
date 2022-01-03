@@ -21,6 +21,9 @@ const Nav = (props) => {
       <Link to='fans-airflow'>
         <h3>Fans/Airflow</h3>
       </Link>
+      <Link to='harvesting-curing'>
+        <h3>Harvesting/Curing</h3>
+      </Link>
       <Link to='faq'>
         <h3>FAQ/Ask A Question</h3>
       </Link>
