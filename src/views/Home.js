@@ -56,23 +56,30 @@ const Home = (props) => {
       {/* <h1 className='m-auto text-2xl text-center'>First Time Grower?</h1> */}
 
       {/*FTG Checklist - to the right of the paragraph above - hopefully with some sort fo weed leaf svg as bullet points*/}
-      <div className='flex justify-between w-full m-auto'>
-        <div>
-          <p className='intro-paragraph'>
-            So you decided to grow Marijuana for the first time and you don't
-            know what the $%^@ you're doing? <br /> <br />
-            Not a worry, we're glad you've taken the first step towards a
-            lifelong hobby! The checklist to the right will breakdown the basics
-            of growing, and is by no means meant to be an extensive breakdown of
-            everything needed to grow award-winning Cannabis.
-          </p>
+      <div className='flex justify-between w-full m-auto '>
+        <div className='p-10 text-lg'>
+          <div className='intro-paragraph'>
+            <p>
+              So you decided to grow Marijuana for the first time and you don't
+              know what the $%^@ you're doing?
+            </p>
+            <br />
+            <p>
+              Not a worry, we're glad you've taken the first step towards a
+              lifelong hobby! The checklist to the right will breakdown the
+              basics of growing, and is by no means meant to be an extensive
+              breakdown of everything needed to grow award-winning Cannabis.
+            </p>
+            <br />
+            <p>
+              Our site is meant to provide the pertinent information to turn a
+              seed into a flower, and we wish you success in your journey.
+              Please feel free to to post any questions for help in the FAQS/Ask
+              A Question section, and we will do our best to answer them.
+            </p>
+          </div>
           <br /> <br />
-          <p>
-            Our site is meant to provide the pertinent information to turn a
-            seed into a flower, and we wish you success in your journey. Please
-            feel free to to post any questions for help in the FAQS/Ask A
-            Question section, and we will do our best to answer them.
-          </p>
+          {/* <p></p> */}
           <div>
             <img
               className='object-cover w-full h-full'
@@ -82,12 +89,19 @@ const Home = (props) => {
           </div>
         </div>
 
-        <div className='w-full bg-white rounded-lg shadow-lg lg:w-1/2'>
-          <h2 className='flex justify-center font-bold'>FTG CHECKLIST</h2>
-          <ol className='divide-y-2 divide-gray-100'>
+        <div
+          style={{
+            backgroundColor: '#97aaa7',
+          }}
+          className='flex items-center justify-center w-full h-full m-auto rounded-lg shadow-lg lg:w-1/2'
+        >
+          {/* <h2 className='flex justify-center font-bold'>FTG CHECKLIST</h2> */}
+
+          {/* add a title for the checklist */}
+          <ol className='divide-y-2 divide-gray-100 bg-brown'>
             {checklist.map((item) => {
               return (
-                <li className='p-3 hover:bg-green-600 hover:text-green-200'>
+                <li className='p-3 hover:bg-brown-200 hover:text-black'>
                   <Link className='font-bold' to={item.to}>
                     {item.name}
                   </Link>
