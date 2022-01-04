@@ -1,15 +1,16 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-const FansAirflow = (props) => {
+const HarvestingCuring = (props) => {
   return (
   <div>
     <Header/>
     <div>
-      Fans/Airflow
+      Harvesting and Curing
     </div>
     <Footer/>
-  </div>);
+  </div>
+  );
 };
 
-export default FansAirflow;
+export default HarvestingCuring;

@@ -1,5 +1,7 @@
 import { Disclosure } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/outline';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');

@@ -6,6 +6,7 @@ import IndoorVOutdoor from './views/IndoorVOutdoor';
 import SoilNutrients from './views/SoilNutrients';
 import Watering from './views/Watering';
 import FansAirflow from './views/FansAirflow';
+import HarvestingCuring from './views/HarvestingCuring'
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -26,6 +27,7 @@ function App() {
           <Route path='/soil-nutrients' element={<SoilNutrients />}></Route>
           <Route path='/watering' element={<Watering />}></Route>
           <Route path='/fans-airflow' element={<FansAirflow />}></Route>
+          <Route path='/harvesting-curing' element={<HarvestingCuring />}></Route>
         </Routes>
       </div>
     </div>

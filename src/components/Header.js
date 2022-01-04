@@ -9,7 +9,7 @@ const Header = (props) => {
           }}
           className="fixed top-0 z-10 flex flex-wrap justify-between w-full p-6 ">
             <div className="flex items-center flex-shrink-0 mr-6 text-white">
-          <a className="text-white no-underline hover:text-white hover:no-underline" href="">
+          <a className="text-white no-underline hover:text-white hover:no-underline" href="/">
             <h2 className="pl-2 text-3xl">First Time Growers</h2>
           </a>
         </div>
