@@ -45,6 +45,11 @@ const checklist = [
     subtext: '',
     to: 'faq',
   },
+  {
+    name: 'Seed',
+    subtext: '',
+    to: 'seed',
+  },
 ];
 
 const Home = (props) => {
