@@ -1,4 +1,8 @@
 const AutoVPhoto = (props) => {
+  
+  const checklist = [{
+    
+  }]
 
   const headNav = [
     {
@@ -21,15 +25,50 @@ const AutoVPhoto = (props) => {
 
   return (
     <div>
-      <h1>Autoflower vs. Photoperiod</h1>
-      <div style={{
-            backgroundColor: '#97aaa7',
-          }}
-          className='w-full h-full py-10 m-auto rounded-lg shadow-lg'
-      >
-      
+      <h1 className="flex justify-center py-4 font-bold">Autoflower vs. Photoperiod</h1>
+      <div
+        style={{
+          backgroundColor: '#97aaa7',
+        }}
+        className='py-6 rounded-lg shadow-lg '
+        >
+        <ul className='justify-around '>
+          {headNav.map((item) => {
+            return (
+              <li className='p-3 active:bg-green-600 focus:outline focus:ring-violet-300 hover:bg-brown-200 hover:text-black'>
+                <a className='' href={item.to}>
+                  {item.info}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+        </div>
+        <div className="py-4">
+        <div
+              style={{
+                backgroundColor: '#97aaa7',
+              }}
+              className='flex items-center justify-center w-full h-full m-auto rounded-lg shadow-lg lg:w-1/2'
+            >
+              {/* <h2 className='flex justify-center font-bold'>FTG CHECKLIST</h2> */}
+
+              {/* add a title for the checklist */}
+              <ol className='divide-y-2 divide-gray-100 bg-brown'>
+                {checklist.map((item) => {
+                  return (
+                    <li className='p-3 hover:bg-brown-200 hover:text-black'>
+                      <a className='font-bold' to={item.to}>
+                        {item.name}
+                      </a>
+                      {item.subtext && <p>{item.subtext}</p>}
+                    </li>
+                  );
+                })}
+              </ol>
+        </div>
+        </div>
       </div>
-    </div>
   )
 }
 
