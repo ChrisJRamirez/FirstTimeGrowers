@@ -27,12 +27,11 @@ const Footer = (props) => {
 
   return (
     <div>
-      <div>
         <footer>
           <div style={{
             backgroundColor: '#97aaa7',
           }}
-            className='flex items-center justify-center w-full h-full m-auto rounded-lg shadow-lg lg:w-1/2'>
+            className='flex flex-row justify-center m-auto rounded-lg shadow-lg'>
             <div>
               <ul>
                 {socials.map((item) => {
@@ -47,13 +46,9 @@ const Footer = (props) => {
                 })}
               </ul>
             </div>
-
           </div>
         </footer>
-
-
       </div>
-    </div>
   );
 };
 

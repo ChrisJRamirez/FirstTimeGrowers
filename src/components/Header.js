@@ -2,7 +2,7 @@
 
 const Header = (props) => {
   return (
-    <div className='flex flex-col py-2'>
+    <div className='flex py-2'>
       <header>
           <nav style={{
             backgroundColor: '#97aaa7',
