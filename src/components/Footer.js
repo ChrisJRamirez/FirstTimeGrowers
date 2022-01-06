@@ -1,10 +1,14 @@
+import {Github, Twitter, Reddit, Instagram} from '@icons-pack/react-simple-icons';
+
+
 const Footer = (props) => {
   const socials = [
     {
       name: 'Github',
       // what is the best way to import social logos and use them on our page, sizing has to all be the same ***
-      logo: '/Users/chrisjramirez/Documents/FirstTimeGrowers/FirstTimeGrowers/src/assets/GitHub-Mark-64px.png',
+      logo: '',
       to: 'https://github.com/ChrisJRamirez/FirstTimeGrowers',
+      color: '#181717'
     },
     {
       name: 'Twitter',
@@ -37,12 +41,20 @@ const Footer = (props) => {
               <a className='font-bold' href={item.to}>
                 {item.name}
               </a>
-              {/* add logos here instead */}
-              {item.subtext && <p>{item.subtext}</p>}
+              <a>
+                
+              </a>
+              
             </li>
           );
         })}
       </ul>
+      <div className="flex justify-around">
+        <Github size={36}/>
+        <Twitter size={36}/>
+        <Reddit size={36}/>
+        <Instagram size={36}/>
+      </div>
     </div>
   );
 };
