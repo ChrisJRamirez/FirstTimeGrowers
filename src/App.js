@@ -8,6 +8,8 @@ import Watering from './views/Watering';
 import FansAirflow from './views/FansAirflow';
 import HarvestingCuring from './views/HarvestingCuring';
 import Seed from './views/Seed';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -19,6 +21,7 @@ function App() {
       }}
     >
       <div className='px-4 mx-auto max-w-7xl sm:px-6 lg:px-8'>
+        <Header />
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/faq' element={<FAQ />}></Route>
@@ -31,6 +34,7 @@ function App() {
           <Route path='/harvesting-curing' element={<HarvestingCuring />}></Route>
           <Route path='/seed' element={<Seed />}></Route>
         </Routes>
+        <Footer />
       </div>
     </div>
   );

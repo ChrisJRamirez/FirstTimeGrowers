@@ -1,6 +1,4 @@
 import { Link } from 'react-router-dom';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 // import Nav from '../components/Nav';
 import Hero from '../components/Hero';
 
@@ -55,7 +53,7 @@ const checklist = [
 const Home = (props) => {
   return (
     <div>
-      <Header />
+      {/* <Header /> */}
       <Hero />
       {/* Intro into website */}
       {/* <h1 className='m-auto text-2xl text-center'>First Time Grower?</h1> */}
@@ -63,7 +61,7 @@ const Home = (props) => {
       {/*FTG Checklist - to the right of the paragraph above - hopefully with some sort fo weed leaf svg as bullet points*/}
       <div className='flex justify-between w-full m-auto '>
         <div className='p-10 text-lg'>
-          <div className='intro-paragraph'>
+          {/* <div className='intro-paragraph'>
             <p>
               So you decided to grow Marijuana for the first time and you don't
               know what the $%^@ you're doing?
@@ -82,6 +80,11 @@ const Home = (props) => {
               Please feel free to to post any questions for help in the FAQS/Ask
               A Question section, and we will do our best to answer them.
             </p>
+          </div> */}
+          <div>
+            <p>We already know that you are struggling to get easy and efficient information. Every website out there (even the “beginners” sites) are overloading you with unnecessary details. We simply wanted what worked while the internet was telling me every possible outcome of every possible situation my plants could get in!</p><br />
+            <p>When I encountered a problem, the “solutions” would steer me in ten different directions and my own trial and error would ultimately get me to where these websites could not.</p><br/>
+            <p>A cool concluding and inviting statement</p>
           </div>
           <br /> <br />
           {/* <p></p> */}
@@ -117,8 +120,6 @@ const Home = (props) => {
           </ol>
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };

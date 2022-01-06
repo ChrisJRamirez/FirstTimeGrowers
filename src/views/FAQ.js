@@ -1,7 +1,6 @@
 import { Disclosure } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/outline';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
@@ -33,7 +32,6 @@ const faqs = [
 const FAQ = (props) => {
   return (
     <div className='flex items-center justify-center h-screen'>
-      <Header/>
       <div className='w-5/6 px-4 py-12 mx-auto sm:py-16 sm:px-6 lg:px-8'>
         <div className='mx-auto divide-y-2 divide-gray-200 '>
           <h2 className='text-3xl font-extrabold text-center text-gray-900 sm:text-4xl'>

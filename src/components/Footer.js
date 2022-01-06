@@ -26,29 +26,25 @@ const Footer = (props) => {
   ];
 
   return (
-    <div>
-        <footer>
-          <div style={{
-            backgroundColor: '#97aaa7',
-          }}
-            className='flex flex-row justify-center m-auto rounded-lg shadow-lg'>
-            <div>
-              <ul>
-                {socials.map((item) => {
-                  return (
-                    <li className='p-3 hover:bg-brown-200 hover:text-black'>
-                      <a className='font-bold' href={item.to}>
-                        {item.name}
-                      </a>
-                      {item.subtext && <p>{item.subtext}</p>}
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          </div>
-        </footer>
-      </div>
+    <div style={{
+      backgroundColor: '#97aaa7',
+    }}
+      className='py-6 rounded-lg shadow-lg'
+    >
+      <ul className='flex justify-around'>
+          {socials.map((item) => {
+            return (
+              <li className='p-3 hover:bg-brown-200 hover:text-black'>
+                <a className='font-bold' href={item.to}>
+                  {item.name}
+                </a>
+                {/* add logos here instead */}
+                {item.subtext && <p>{item.subtext}</p>}
+              </li>
+            );
+          })}
+        </ul>
+    </div>
   );
 };
 

@@ -1,10 +1,6 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-
 const AutoVPhoto = (props) => {
   return (
     <div>
-      <Header/>
       <h1>AutoVPhoto</h1>
       <div>
         <p>So what is the difference between AutoFlowers and PhotoPeriod plants?</p>
@@ -13,7 +9,6 @@ const AutoVPhoto = (props) => {
           require certain amounts of light to move beyond each cycle.
         </p>
       </div>
-      <Footer/>
     </div>
   )
 }
