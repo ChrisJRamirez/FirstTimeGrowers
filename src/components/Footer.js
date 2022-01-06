@@ -55,6 +55,7 @@ const Footer = (props) => {
         }}
         className='py-6 rounded-lg shadow-lg'>
       <div className="flex justify-around ">
+        {/* could probably remove hover, looks kinda odd? */}
           <a className="hover:bg-brown-200" href="https://github.com/ChrisJRamirez/FirstTimeGrowers">
             GitHub<Github size={55}/>
           </a>
