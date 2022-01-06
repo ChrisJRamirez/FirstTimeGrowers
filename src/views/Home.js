@@ -82,8 +82,20 @@ const Home = (props) => {
             </p>
           </div> */}
           <div>
-            <p>We already know that you are struggling to get easy and efficient information. Every website out there (even the “beginners” sites) are overloading you with unnecessary details. We simply wanted what worked while the internet was telling me every possible outcome of every possible situation my plants could get in!</p><br />
-            <p>When I encountered a problem, the “solutions” would steer me in ten different directions and my own trial and error would ultimately get me to where these websites could not.</p><br/>
+            <p>
+              We already know that you are struggling to get easy and efficient
+              information. Every website out there (even the “beginners” sites)
+              are overloading you with unnecessary details. We simply wanted
+              what worked while the internet was telling me every possible
+              outcome of every possible situation my plants could get in!
+            </p>
+            <br />
+            <p>
+              When I encountered a problem, the “solutions” would steer me in
+              ten different directions and my own trial and error would
+              ultimately get me to where these websites could not.
+            </p>
+            <br />
             <p>A cool concluding and inviting statement</p>
           </div>
           <br /> <br />
