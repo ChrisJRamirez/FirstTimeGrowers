@@ -42,9 +42,9 @@ const AutoVPhoto = (props) => {
             {headNav.map((item) => {
               return (
                 <li className='p-3 active:bg-green-600 focus:outline focus:ring-violet-300 hover:bg-brown-200 hover:text-black'>
-                  <a>
+                  <p>
                     {item.info}
-                  </a>
+                  </p>
                 </li>
               );
             })}
@@ -64,9 +64,9 @@ const AutoVPhoto = (props) => {
                   {checklist.map((item) => {
                     return (
                       <li className='p-3 hover:bg-brown-200 hover:text-black'>
-                        <a className='font-bold' >
+                        <p clpssName='font-bold' >
                           {item.question}
-                        </a>
+                        </p>
                         <p>{item.answer}</p>
                       </li>
                     );

@@ -1,32 +1,31 @@
 import {Github, Twitter, Reddit, Instagram} from '@icons-pack/react-simple-icons';
-import { Link } from 'react-router-dom';
 
 
 const Footer = (props) => {
-  const socials = [
-    {
-      name: 'Github',
-      // what is the best way to import social logos and use them on our page, sizing has to all be the same ***
-      logo: '',
-      to: 'https://github.com/ChrisJRamirez/FirstTimeGrowers',
-      color: '#181717'
-    },
-    {
-      name: 'Twitter',
-      logo: '',
-      to: 'https://twitter.com/FTGrowers',
-    },
-    {
-      name: 'Reddit',
-      logo: '',
-      to: 'https://www.reddit.com/user/TheFirstTimeGrowers',
-    },
-    {
-      name: 'Instagram',
-      logo: '',
-      to: 'https://www.instagram.com/thefirsttimegrowers/',
-    },
-  ];
+  // const socials = [
+  //   {
+  //     name: 'Github',
+  //     // what is the best way to import social logos and use them on our page, sizing has to all be the same ***
+  //     logo: '',
+  //     to: 'https://github.com/ChrisJRamirez/FirstTimeGrowers',
+  //     color: '#181717'
+  //   },
+  //   {
+  //     name: 'Twitter',
+  //     logo: '',
+  //     to: 'https://twitter.com/FTGrowers',
+  //   },
+  //   {
+  //     name: 'Reddit',
+  //     logo: '',
+  //     to: 'https://www.reddit.com/user/TheFirstTimeGrowers',
+  //   },
+  //   {
+  //     name: 'Instagram',
+  //     logo: '',
+  //     to: 'https://www.instagram.com/thefirsttimegrowers/',
+  //   },
+  // ];
 
   return (
     // <div
