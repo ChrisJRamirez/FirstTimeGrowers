@@ -20,7 +20,8 @@ function App() {
         backgroundColor: '#EADDCA',
       }}
     >
-      <div className='px-4 mx-auto max-w-7xl sm:px-6 lg:px-8'>
+      {/* <div className='px-4 mx-auto max-w-7xl sm:px-6 lg:px-8'> */}
+      <div className='w-full mx-auto'>
         <Header />
         <Routes>
           <Route path='/' element={<Home />}></Route>
