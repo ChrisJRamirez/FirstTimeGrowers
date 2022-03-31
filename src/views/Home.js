@@ -14,6 +14,11 @@ const checklist = [
     to: 'indoor-v-outdoor',
   },
   {
+    name: 'Seed',
+    subtext: '',
+    to: 'seed',
+  },
+  {
     name: 'Lighting',
     subtext: '',
     to: 'lighting',
@@ -42,11 +47,6 @@ const checklist = [
     name: 'FAQ',
     subtext: '',
     to: 'faq',
-  },
-  {
-    name: 'Seed',
-    subtext: '',
-    to: 'seed',
   },
 ];
 

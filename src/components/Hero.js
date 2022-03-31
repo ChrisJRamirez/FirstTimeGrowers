@@ -25,7 +25,7 @@ export default function Hero() {
                     <span className='block text-white'>First Time Grower?</span>
                   </h1>
                   <p className='max-w-lg mx-auto mt-6 text-2xl text-center text-rose-100 sm:max-w-3xl'>
-                    Not problem, we're glad you've taken the first step towards
+                    Not a problem, we're glad you've taken the first step towards
                     a lifelong hobby.
                   </p>
                   {/* <div className='max-w-sm mx-auto mt-10 sm:max-w-none sm:flex sm:justify-center'>
