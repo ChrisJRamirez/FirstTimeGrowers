@@ -34,7 +34,7 @@ const Header = (props) => {
         className='fixed z-50 w-full rounded-lg'
       >
         <div className='flex justify-between mx-10'>
-          <h2 className='my-auto text-center' >First Time Growers</h2>
+          <Link className='my-auto font-bold text-center' to="/">First Time Growers</Link>
           <nav>
             <ol className='flex'>
               {headNav.map((item) => {
