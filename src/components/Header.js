@@ -31,10 +31,12 @@ const Header = (props) => {
         style={{
           backgroundColor: '#97aaa7',
         }}
-        className='fixed z-50 w-full rounded-lg'
+        className='fixed z-50 w-full rounded-b-lg'
       >
         <div className='flex justify-between mx-10'>
-          <Link className='my-auto font-bold text-center' to="/">First Time Growers</Link>
+          <Link className='my-auto font-bold text-center' to='/'>
+            First Time Growers
+          </Link>
           <nav>
             <ol className='flex'>
               {headNav.map((item) => {
