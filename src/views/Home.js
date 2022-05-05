@@ -4,8 +4,8 @@ import Hero from '../components/Hero';
 
 const checklist = [
   {
-    name: 'AutoFlower Vs PhotoPeriods',
-    subtext: 'What type of plant am I trying to grow?',
+    name: 'AutoFlowers vs. PhotoPeriods',
+    subtext: '',
     to: 'auto-v-photo',
   },
   {
