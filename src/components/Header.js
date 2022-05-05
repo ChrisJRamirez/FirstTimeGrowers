@@ -14,7 +14,7 @@ const Header = (props) => {
       to: 'mission',
     },
     {
-      name: 'Contact',
+      name: 'Contact / Team',
       logo: '',
       to: 'contact',
     },
