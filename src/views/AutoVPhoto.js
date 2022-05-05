@@ -33,9 +33,9 @@ const faqs = [
   },
   {
     question: 'Can I grow a male and female plant next to each other / together?',
-    answer: 'Though there is some benefit to this for experienced growers (as mentioned above -> growing seeds), we would highly reccomend not trying this out for a first timer.',
+    answer: 'Though there is some benefit to this for experienced growers (as mentioned above -> growing seeds), we would highly recommend not trying this out for a first timer.',
   },
- 
+
 ];
 
 const AutoVPhoto = (props) => {
