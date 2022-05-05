@@ -10,7 +10,8 @@ import HarvestingCuring from './views/HarvestingCuring';
 import Seed from './views/Seed';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Legality from './views/Legality'
+import Legality from './views/Legality';
+import Contact from './views/ContactTeam'
 
 
 import { Routes, Route } from 'react-router-dom';
@@ -37,6 +38,7 @@ function App() {
           <Route path='/harvesting-curing' element={<HarvestingCuring />}></Route>
           <Route path='/seed' element={<Seed />}></Route>
           <Route path='/legality' element={<Legality />}></Route>
+          <Route path='/contact' element={<Contact />}></Route>
         </Routes>
         <Footer />
       </div>
