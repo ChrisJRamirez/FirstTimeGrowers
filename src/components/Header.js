@@ -19,9 +19,9 @@ const Header = (props) => {
       to: 'contact',
     },
     {
-      name: 'Team',
+      name: 'Legality',
       logo: '',
-      to: 'team',
+      to: 'legality',
     },
   ];
 

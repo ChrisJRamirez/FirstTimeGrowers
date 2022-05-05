@@ -10,6 +10,7 @@ import HarvestingCuring from './views/HarvestingCuring';
 import Seed from './views/Seed';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Legality from './views/Legality'
 
 
 import { Routes, Route } from 'react-router-dom';
@@ -35,6 +36,7 @@ function App() {
           <Route path='/fans-airflow' element={<FansAirflow />}></Route>
           <Route path='/harvesting-curing' element={<HarvestingCuring />}></Route>
           <Route path='/seed' element={<Seed />}></Route>
+          <Route path='/legality' element={<Legality />}></Route>
         </Routes>
         <Footer />
       </div>
