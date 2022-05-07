@@ -14,14 +14,14 @@ const Header = (props) => {
       to: 'mission',
     },
     {
-      name: 'Contact',
+      name: 'Contact / Team',
       logo: '',
       to: 'contact',
     },
     {
-      name: 'Team',
+      name: 'Legality',
       logo: '',
-      to: 'team',
+      to: 'legality',
     },
   ];
 
