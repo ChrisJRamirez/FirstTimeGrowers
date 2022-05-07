@@ -59,9 +59,10 @@ const Home = (props) => {
       {/* <h1 className='m-auto text-2xl text-center'>First Time Grower?</h1> */}
 
       {/*FTG Checklist - to the right of the paragraph above - hopefully with some sort fo weed leaf svg as bullet points*/}
-      <div className='flex justify-between w-full m-auto '>
-        <div className='p-10 text-lg'>
-          {/* <div className='intro-paragraph'>
+      <section className='w-5/6 m-auto'>
+        <div className='flex justify-between w-full m-auto '>
+          <div className='p-5 text-lg'>
+            {/* <div className='intro-paragraph'>
             <p>
               So you decided to grow Marijuana for the first time and you don't
               know what the $%^@ you're doing?
@@ -81,57 +82,59 @@ const Home = (props) => {
               A Question section, and we will do our best to answer them.
             </p>
           </div> */}
-          <div>
-            <p>
-              We already know that you are struggling to get easy and efficient
-              information. Every website out there (even the “beginners” sites)
-              are overloading you with unnecessary details. We simply wanted
-              what worked while the internet was telling me every possible
-              outcome of every possible situation my plants could get in!
-            </p>
-            <br />
-            <p>
-              When I encountered a problem, the “solutions” would steer me in
-              ten different directions and my own trial and error would
-              ultimately get me to where these websites could not.
-            </p>
-            <br />
-            <p>A cool concluding and inviting statement</p>
+            <div>
+              <p>
+                We already know that you are struggling to get easy and
+                efficient information. Every website out there (even the
+                “beginners” sites) are overloading you with unnecessary details.
+                We simply wanted what worked while the internet was telling me
+                every possible outcome of every possible situation my plants
+                could get in!
+              </p>
+              <br />
+              <p>
+                When I encountered a problem, the “solutions” would steer me in
+                ten different directions and my own trial and error would
+                ultimately get me to where these websites could not.
+              </p>
+              <br />
+              <p>A cool concluding and inviting statement</p>
+            </div>
+            <br /> <br />
+            {/* <p></p> */}
+            <div>
+              <img
+                className='object-cover w-full h-full'
+                src='https://3hlboz3j490o1qmcr2gaz7i1-wpengine.netdna-ssl.com/wp-content/uploads/2021/07/canabis-cycle.jpg.webp'
+                alt='weed-plant-lifecyle'
+              />
+            </div>
           </div>
-          <br /> <br />
-          {/* <p></p> */}
-          <div>
-            <img
-              className='object-cover w-full h-full'
-              src='https://3hlboz3j490o1qmcr2gaz7i1-wpengine.netdna-ssl.com/wp-content/uploads/2021/07/canabis-cycle.jpg.webp'
-              alt='weed-plant-lifecyle'
-            />
+
+          <div
+            style={{
+              backgroundColor: '#97aaa7',
+            }}
+            className='flex items-center justify-center w-full shadow-lg lg:w-1/2'
+          >
+            {/* <h2 className='flex justify-center font-bold'>FTG CHECKLIST</h2> */}
+
+            {/* add a title for the checklist */}
+            <ol className='h-full m-auto divide-y-2 divide-gray-100 bg-brown'>
+              {checklist.map((item) => {
+                return (
+                  <li className='p-3 md:py-4 lg:py-5 hover:bg-brown-200 hover:text-black'>
+                    <Link className='font-bold' to={item.to}>
+                      {item.name}
+                    </Link>
+                    {item.subtext && <p>{item.subtext}</p>}
+                  </li>
+                );
+              })}
+            </ol>
           </div>
         </div>
-
-        <div
-          style={{
-            backgroundColor: '#97aaa7',
-          }}
-          className='flex items-center justify-center w-full h-full m-auto rounded-lg shadow-lg lg:w-1/2'
-        >
-          {/* <h2 className='flex justify-center font-bold'>FTG CHECKLIST</h2> */}
-
-          {/* add a title for the checklist */}
-          <ol className='divide-y-2 divide-gray-100 bg-brown'>
-            {checklist.map((item) => {
-              return (
-                <li className='p-3 hover:bg-brown-200 hover:text-black'>
-                  <Link className='font-bold' to={item.to}>
-                    {item.name}
-                  </Link>
-                  {item.subtext && <p>{item.subtext}</p>}
-                </li>
-              );
-            })}
-          </ol>
-        </div>
-      </div>
+      </section>
     </div>
   );
 };
