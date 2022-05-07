@@ -59,7 +59,7 @@ const Home = (props) => {
       {/* <h1 className='m-auto text-2xl text-center'>First Time Grower?</h1> */}
 
       {/*FTG Checklist - to the right of the paragraph above - hopefully with some sort fo weed leaf svg as bullet points*/}
-      <section className='w-5/6 m-auto'>
+      <section className='m-auto md:w-2/3 lg:5/6'>
         <div className='flex justify-between w-full m-auto '>
           <div className='p-5 text-lg'>
             {/* <div className='intro-paragraph'>
@@ -115,12 +115,12 @@ const Home = (props) => {
             style={{
               backgroundColor: '#97aaa7',
             }}
-            className='flex items-center justify-center w-full shadow-lg lg:w-1/2'
+            className='flex items-center justify-center hidden w-full shadow-lg md:block lg:w-1/2'
           >
             {/* <h2 className='flex justify-center font-bold'>FTG CHECKLIST</h2> */}
 
             {/* add a title for the checklist */}
-            <ol className='h-full m-auto divide-y-2 divide-gray-100 bg-brown'>
+            <ol className='h-full m-auto divide-y-2 divide-gray-100 bg-brown '>
               {checklist.map((item) => {
                 return (
                   <li className='p-3 md:py-4 lg:py-5 hover:bg-brown-200 hover:text-black'>
