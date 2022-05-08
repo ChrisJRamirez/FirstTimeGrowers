@@ -1,5 +1,9 @@
-import {Github, Twitter, Reddit, Instagram} from '@icons-pack/react-simple-icons';
-
+import {
+  Github,
+  Twitter,
+  Reddit,
+  Instagram,
+} from '@icons-pack/react-simple-icons';
 
 const Footer = (props) => {
   // const socials = [
@@ -42,38 +46,53 @@ const Footer = (props) => {
     //             {item.name}
     //           </a>
     //           <a>
-                
+
     //           </a>
-              
+
     //         </li>
     //       );
     //     })}
     //   </ul>
-    <div style={{
+    <div
+      style={{
         backgroundColor: '#97aaa7',
-        }}
-        className='py-6 rounded-lg shadow-lg'>
-      <div className="flex justify-around margin-top 5rem">
+      }}
+      className='py-5 rounded-lg shadow-lg'
+    >
+      <div className='flex justify-around margin-top 5rem'>
         {/* could probably remove hover, looks kinda odd? */}
-          <a className="hover:bg-brown-200" href="https://github.com/ChrisJRamirez/FirstTimeGrowers">
-            GitHub<Github size={55}/>
-          </a>
+        <a
+          className='hover:bg-brown-200'
+          href='https://github.com/ChrisJRamirez/FirstTimeGrowers'
+        >
+          GitHub
+          <Github size={45} />
+        </a>
 
-          <a className="hover:bg-brown-200" href="https://twitter.com/FTGrowers">
-            Twitter<Twitter size={55}/>
-          </a>
+        <a className='hover:bg-brown-200' href='https://twitter.com/FTGrowers'>
+          Twitter
+          <Twitter size={45} />
+        </a>
 
-          <a className="hover:bg-brown-200" href="https://www.reddit.com/user/TheFirstTimeGrowers">
-            Reddit<Reddit size={55}/>
-          </a>
-          
-          <a className="hover:bg-brown-200" href="https://www.instagram.com/thefirsttimegrowers/">
-            Instagram<Instagram size={55}/>
-          </a>
+        <a
+          className='hover:bg-brown-200'
+          href='https://www.reddit.com/user/TheFirstTimeGrowers'
+        >
+          Reddit
+          <Reddit size={45} />
+        </a>
+
+        <a
+          className='hover:bg-brown-200'
+          href='https://www.instagram.com/thefirsttimegrowers/'
+        >
+          Instagram
+          <Instagram size={45} />
+        </a>
       </div>
     </div>
-    
-// will need div down here if uncomment map shi above
+
+    // will need div down here if uncomment map shi above
   );
 };
 

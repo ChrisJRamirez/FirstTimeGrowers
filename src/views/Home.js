@@ -115,7 +115,7 @@ const Home = (props) => {
             style={{
               backgroundColor: '#97aaa7',
             }}
-            className='flex items-center justify-center hidden w-full shadow-lg md:block lg:w-1/2'
+            className='flex hidden w-full shadow-lg justify-evenly md:block lg:w-1/2'
           >
             {/* <h2 className='flex justify-center font-bold'>FTG CHECKLIST</h2> */}
 
