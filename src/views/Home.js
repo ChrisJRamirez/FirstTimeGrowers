@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 // import Nav from '../components/Nav';
 import Hero from '../components/Hero';
-
+import Slip from '../audio/cartoon slip.mp3';
+import Supa from '../audio/supa hot fire.mp3';
+import Lord from '../audio/you mind if i praise the lord.mp3';
 import { OneThousandOneTracklists } from '@icons-pack/react-simple-icons';
 
 const checklist = [
@@ -50,6 +52,12 @@ const checklist = [
     subtext: '',
     to: 'faq',
   },
+];
+
+const audioClips = [
+  { sound: Slip, label: 'Slip' },
+  { sound: Supa, label: 'OHHH' },
+  { sound: Lord, label: 'Jesus' },
 ];
 
 const Home = (props) => {
