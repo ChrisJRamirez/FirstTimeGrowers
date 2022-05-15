@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 // import Nav from '../components/Nav';
 import { Howl, Howler } from 'howler';
 import Hero from '../components/Hero';
-import Slip from '../audio/cartoon slip.mp3';
-import Supa from '../audio/supa hot fire.mp3';
-import Lord from '../audio/you mind if i praise the lord.mp3';
+import Mario from '../audio/mario scream.mp3';
+import Waluigi from '../audio/waluigi scream.mp3';
+import Wario from '../audio/wario  scream.mp3';
 import { OneThousandOneTracklists } from '@icons-pack/react-simple-icons';
 
 const checklist = [
@@ -55,7 +55,7 @@ const checklist = [
   },
 ];
 
-const audioClips = [Slip, Supa, Lord];
+const audioClips = [Mario, Waluigi, Wario];
 
 const Home = (props) => {
   const playRandomClip = () => {
