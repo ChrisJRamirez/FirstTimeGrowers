@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 // import Nav from '../components/Nav';
+import { Howl, Howler } from 'howler';
 import Hero from '../components/Hero';
 import Slip from '../audio/cartoon slip.mp3';
 import Supa from '../audio/supa hot fire.mp3';
@@ -54,13 +55,19 @@ const checklist = [
   },
 ];
 
-const audioClips = [
-  { sound: Slip, label: 'Slip' },
-  { sound: Supa, label: 'OHHH' },
-  { sound: Lord, label: 'Jesus' },
-];
+const audioClips = [Slip, Supa, Lord];
 
 const Home = (props) => {
+  const playRandomClip = () => {
+    // selects random number from 0-2
+    const randNum = Math.floor(Math.random() * 3);
+    const randClip = new Howl({
+      src: [audioClips[randNum]],
+    });
+
+    randClip.play();
+  };
+
   return (
     <div>
       {/* <Header /> */}
@@ -94,7 +101,10 @@ const Home = (props) => {
           </div> */}
             <div className='flex'>
               <div className='p-3'>
-                <OneThousandOneTracklists />
+                <OneThousandOneTracklists
+                  className='cursor-pointer'
+                  onClick={playRandomClip}
+                />
               </div>
               <div>
                 <p>
