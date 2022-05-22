@@ -12,7 +12,7 @@ const FAQ = (props) => {
 
   useEffect(() => {
     axios
-      .get(`https://ftg-be.herokuapp.com/api/question`)
+      .get(`${process.env.REACT_APP_DEV_API_URL}/api/question`)
       .then((res) => {
         const questions = res.data;
         setQuestions(questions);
