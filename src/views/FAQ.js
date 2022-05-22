@@ -1,35 +1,27 @@
 import { Disclosure } from '@headlessui/react';
 import { ChevronDownIcon } from '@heroicons/react/outline';
-
+import axios from 'axios';
+import { useState, useEffect } from 'react';
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ');
 }
 
-const faqs = [
-  {
-    question: 'How do you get the code for the bank vault?',
-    answer: 'You checkout their branch.',
-  },
-  {
-    question: 'What do you call a busy waiter?',
-    answer: 'A server.',
-  },
-  {
-    question: 'What do you call an idle server?',
-    answer: 'A waiter.',
-  },
-  {
-    question: 'What diet did the ghost developer go on?',
-    answer: 'Boolean.',
-  },
-  {
-    question: 'Why was the developer unhappy at their job?',
-    answer: 'They wanted arrays.',
-  },
-];
-
 const FAQ = (props) => {
+  const [questions, setQuestions] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get(`https://ftg-be.herokuapp.com/api/question`)
+      .then((res) => {
+        const questions = res.data;
+        setQuestions(questions);
+      })
+      .catch((err) => {
+        // setQuestions(faqs);
+      });
+  }, []);
+
   return (
     <div className='flex items-center justify-center h-screen'>
       <div className='w-5/6 px-4 py-12 mx-auto sm:py-16 sm:px-6 lg:px-8'>
@@ -38,12 +30,15 @@ const FAQ = (props) => {
             Frequently asked questions
           </h2>
           <dl className='mt-6 space-y-6 divide-y divide-gray-200'>
-            {faqs.map((faq) => (
+            {questions.map((faq, id) => (
               <Disclosure as='div' key={faq.question} className='pt-6'>
                 {({ open }) => (
                   <>
                     <dt className='text-lg'>
-                      <Disclosure.Button className='flex items-start justify-between w-full text-left text-gray-400'>
+                      <Disclosure.Button
+                        key={id}
+                        className='flex items-start justify-between w-full text-left text-gray-400'
+                      >
                         <span className='font-medium text-gray-900'>
                           {faq.question}
                         </span>
