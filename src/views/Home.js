@@ -1,6 +1,11 @@
 import { Link } from 'react-router-dom';
 // import Nav from '../components/Nav';
+import { Howl, Howler } from 'howler';
 import Hero from '../components/Hero';
+import Mario from '../audio/mario scream.mp3';
+import Waluigi from '../audio/waluigi scream.mp3';
+import Wario from '../audio/wario  scream.mp3';
+import { OneThousandOneTracklists } from '@icons-pack/react-simple-icons';
 
 const checklist = [
   {
@@ -50,7 +55,19 @@ const checklist = [
   },
 ];
 
+const audioClips = [Mario, Waluigi, Wario];
+
 const Home = (props) => {
+  const playRandomClip = () => {
+    // selects random number from 0-2
+    const randNum = Math.floor(Math.random() * 3);
+    const randClip = new Howl({
+      src: [audioClips[randNum]],
+    });
+
+    randClip.play();
+  };
+
   return (
     <div>
       {/* <Header /> */}
@@ -59,7 +76,7 @@ const Home = (props) => {
       {/* <h1 className='m-auto text-2xl text-center'>First Time Grower?</h1> */}
 
       {/*FTG Checklist - to the right of the paragraph above - hopefully with some sort fo weed leaf svg as bullet points*/}
-      <section className='m-auto md:w-2/3 lg:5/6'>
+      <section className='m-auto md:w-5/6 lg:4/6'>
         <div className='flex justify-between w-full m-auto '>
           <div className='p-5 text-lg'>
             {/* <div className='intro-paragraph'>
@@ -82,23 +99,31 @@ const Home = (props) => {
               A Question section, and we will do our best to answer them.
             </p>
           </div> */}
-            <div>
-              <p>
-                We already know that you are struggling to get easy and
-                efficient information. Every website out there (even the
-                “beginners” sites) are overloading you with unnecessary details.
-                We simply wanted what worked while the internet was telling me
-                every possible outcome of every possible situation my plants
-                could get in!
-              </p>
-              <br />
-              <p>
-                When I encountered a problem, the “solutions” would steer me in
-                ten different directions and my own trial and error would
-                ultimately get me to where these websites could not.
-              </p>
-              <br />
-              <p>A cool concluding and inviting statement</p>
+            <div className='flex'>
+              <div className='p-3'>
+                <OneThousandOneTracklists
+                  className='cursor-pointer'
+                  onClick={playRandomClip}
+                />
+              </div>
+              <div>
+                <p>
+                  We already know that you are struggling to get easy and
+                  efficient information. Every website out there (even the
+                  “beginners” sites) are overloading you with unnecessary
+                  details. We simply wanted what worked while the internet was
+                  telling me every possible outcome of every possible situation
+                  my plants could get in!
+                </p>
+                <br />
+                <p>
+                  When I encountered a problem, the “solutions” would steer me
+                  in ten different directions and my own trial and error would
+                  ultimately get me to where these websites could not.
+                </p>
+                <br />
+                <p>A cool concluding and inviting statement</p>
+              </div>
             </div>
             <br /> <br />
             {/* <p></p> */}
