@@ -12,8 +12,10 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Legality from './views/Legality';
 import Contact from './views/ContactTeam';
-
 import { Routes, Route } from 'react-router-dom';
+import AdminLogin from './views/AdminLogin';
+import PrivateRoute from './components/PrivateRoute';
+import Admin from './views/Admin';
 
 function App() {
   return (
@@ -26,21 +28,27 @@ function App() {
       <div className='w-full mx-auto'>
         <Header />
         <Routes>
-          <Route path='/' element={<Home />}></Route>
-          <Route path='/faq' element={<FAQ />}></Route>
-          <Route path='/auto-v-photo' element={<AutoVPhoto />}></Route>
-          <Route path='/lighting' element={<Lighting />}></Route>
-          <Route path='/indoor-v-outdoor' element={<IndoorVOutdoor />}></Route>
-          <Route path='/soil-nutrients' element={<SoilNutrients />}></Route>
-          <Route path='/watering' element={<Watering />}></Route>
-          <Route path='/fans-airflow' element={<FansAirflow />}></Route>
+          <Route path='/' element={<Home />} />
+          <Route path='/auth' element={<AdminLogin />} />
           <Route
-            path='/harvesting-curing'
-            element={<HarvestingCuring />}
-          ></Route>
-          <Route path='/seed' element={<Seed />}></Route>
-          <Route path='/legality' element={<Legality />}></Route>
-          <Route path='/contact' element={<Contact />}></Route>
+            path='admin'
+            element={
+              <PrivateRoute>
+                <Admin />
+              </PrivateRoute>
+            }
+          />
+          <Route path='/faq' element={<FAQ />} />
+          <Route path='/auto-v-photo' element={<AutoVPhoto />} />
+          <Route path='/lighting' element={<Lighting />} />
+          <Route path='/indoor-v-outdoor' element={<IndoorVOutdoor />} />
+          <Route path='/soil-nutrients' element={<SoilNutrients />} />
+          <Route path='/watering' element={<Watering />} />
+          <Route path='/fans-airflow' element={<FansAirflow />} />
+          <Route path='/harvesting-curing' element={<HarvestingCuring />} />
+          <Route path='/seed' element={<Seed />} />
+          <Route path='/legality' element={<Legality />} />
+          <Route path='/contact' element={<Contact />} />
         </Routes>
         <Footer />
       </div>
