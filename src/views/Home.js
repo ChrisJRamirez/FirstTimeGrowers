@@ -4,7 +4,6 @@ import { Howl, Howler } from 'howler';
 import Hero from '../components/Hero';
 import Mario from '../audio/mario scream.mp3';
 import Waluigi from '../audio/waluigi scream.mp3';
-import Wario from '../audio/wario  scream.mp3';
 import { OneThousandOneTracklists } from '@icons-pack/react-simple-icons';
 
 const checklist = [
@@ -55,7 +54,7 @@ const checklist = [
   },
 ];
 
-const audioClips = [Mario, Waluigi, Wario];
+const audioClips = [Mario, Waluigi];
 
 const Home = (props) => {
   const playRandomClip = () => {
