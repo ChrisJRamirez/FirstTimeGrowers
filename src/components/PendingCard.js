@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const initialFormValues = { answer: '' };
+const initialFormValues = { answer: '', reason: 'unrelated' };
 
 export default function PendingCard({ question, id }) {
   const [formValues, setFormValues] = useState(initialFormValues);
@@ -10,39 +10,71 @@ export default function PendingCard({ question, id }) {
     setFormValues({ ...formValues, [e.target.name]: e.target.value });
   };
   const onSubmit = (e) => {
+    // check if we are approving or archiving
     e.preventDefault();
   };
 
   return (
     <div className='max-w-xs m-auto my-2 overflow-hidden bg-white rounded shadow-lg'>
-      <form class='px-6 py-4' onSubmit={onSubmit}>
+      <form className='px-6 py-4' onSubmit={onSubmit}>
         {/* Approve/Archive Buttons */}
         <div className='w-full'>
-          <button className='w-1/2 m-auto bg-green-500'>Approve</button>
-          <button className='w-1/2 m-auto bg-red-500'>Archive</button>
+          <button
+            onClick={() => {
+              setApproving(true);
+            }}
+            className='w-1/2 m-auto bg-green-500'
+          >
+            Approve
+          </button>
+          <button
+            onClick={() => {
+              setApproving(false);
+            }}
+            className='w-1/2 m-auto bg-red-500'
+          >
+            Archive
+          </button>
         </div>
 
         {/* Question */}
-        <h4 class='font-bold text-l text-center mb-2'>
-          Why did the apple cross the road?
-        </h4>
+        <h4 className='mb-2 font-bold text-center text-l'>{question}</h4>
 
         {/* Answer/Reason */}
-        <input
-          class='block w-full p-4 rounded-lg sm:text-md border-2 border-black'
-          id='answer'
-          name='answer'
-          onChange={onChange}
-          type='text'
-          placeholder='answer'
-        />
+        {approving ? (
+          <input
+            className='block w-full p-4 border-2 border-black rounded-lg sm:text-md'
+            id='answer'
+            name='answer'
+            onChange={onChange}
+            type='text'
+            value={formValues.answer}
+            placeholder='answer'
+          />
+        ) : (
+          <div className='flex justify-around w-full my-2'>
+            <label className='w-1/5'>Reason</label>
+            <select
+              id='reason'
+              name='reason'
+              onChange={onChange}
+              value={formValues.reason}
+              className='w-3/5 text-center'
+            >
+              <option value='unrelated'>Unrelated</option>
+              <option value='inappropriate'>Inappropriate</option>
+              <option value='incorrectly worded'>Incorrectly Worded</option>
+            </select>
+          </div>
+        )}
 
-        {/* Approving/Archiving */}
+        {/* SUBMISSTION Approving/Archiving */}
         <button
           type='submit'
-          className='w-full m-auto my-2 text-lg bg-green-200'
+          className='w-full m-auto my-2 text-lg'
+          style={{ backgroundColor: approving ? '#90EE90' : '#FA8072' }}
         >
-          Submit
+          {approving ? 'Submit' : 'Archive'}
         </button>
       </form>
     </div>
