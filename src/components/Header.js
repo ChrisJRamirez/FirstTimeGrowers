@@ -41,7 +41,10 @@ const Header = (props) => {
             <ol className='flex'>
               {headNav.map((item) => {
                 return (
-                  <li className='p-3 hover:bg-brown-200 hover:text-black'>
+                  <li
+                    key={item.name}
+                    className='p-3 hover:bg-brown-200 hover:text-black'
+                  >
                     <Link className='font-bold' to={item.to}>
                       {item.name}
                     </Link>

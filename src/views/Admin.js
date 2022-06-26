@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PendingCard from '../components/PendingCard';
 import axios from 'axios';
+import ArchivedCard from '../components/ArchivedCard';
 
 export default function Admin() {
   const [questions, setQuestions] = useState([]);
@@ -20,16 +21,29 @@ export default function Admin() {
 
   return (
     <section className='flex justify-around w-full border-2 border-rose-100'>
-      {/* <div className='w-2/5 border-2 border-rose-500'> */}
-      <div className='w-2/5'>
-        {/* make into card component */}
+      <div className='w-2/5 overflow-auto h-[48rem]'>
+        <h2 className='text-xl text-center'>Pending</h2>
         {questions
           .filter(({ answer, reason }) => !answer && !reason)
           .map(({ question, id }) => {
             return <PendingCard question={question} id={id} key={id} />;
           })}
       </div>
-      <div className='w-2/5 border-2 border-rose-500'>111</div>
+      <div className='w-2/5 overflow-auto h-[48rem]'>
+        <h2 className='text-xl text-center'>Archived</h2>
+        {questions
+          .filter(({ reason }) => reason)
+          .map(({ question, reason, id }) => {
+            return (
+              <ArchivedCard
+                id={id}
+                key={id}
+                question={question}
+                reason={reason}
+              />
+            );
+          })}
+      </div>
     </section>
   );
 }
